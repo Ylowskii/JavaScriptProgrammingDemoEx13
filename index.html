@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Math Class</title>
+		<script src="app.js" defer type="module"></script>
+		<style>
+			html {
+				padding: 10px;
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+					'Lucida Sans', Arial, sans-serif;
+			}
+
+			.b1 {
+				min-height: 20px;
+				max-width: 100px;
+				border: 1px solid #a1a1a1;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid #a1a1a1;
+				padding: 3px;
+			}
+
+			td {
+				min-width: 100px;
+			}
+
+			table {
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript Math Class</h1>
+		<form id="myMathForm">
+			<table>
+				<tr>
+					<td><input type="text" id="txtAbs" /></td>
+					<td>Absolute Value:</td>
+					<td id="abs"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtRound" /></td>
+					<td>Round Value:</td>
+					<td id="round"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtCeil" /></td>
+					<td>Ceiling Value:</td>
+					<td id="ceiling"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtFloor" /></td>
+					<td>Floor Value:</td>
+					<td id="floor"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtSquare" /></td>
+					<td>Square Value:</td>
+					<td id="square"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtSquareRoot" /></td>
+					<td>Square Root Value:</td>
+					<td id="squareRoot"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="txtValueToPower" style="width: 15px" /> to
+						the power of <input type="text" id="txtPower" style="width: 15px" />
+					</td>
+					<td>Power Value:</td>
+					<td id="power"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="txtValueToRoot" style="width: 30px" /> to the
+						<input type="text" id="txtRoot" style="width: 30px" /> root
+					</td>
+					<td>Root Value:</td>
+					<td id="root"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtSine" /></td>
+					<td>Sine:</td>
+					<td id="sine"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtCos" /></td>
+					<td>Cos:</td>
+					<td id="cos"></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="txtTan" /></td>
+					<td>Tan:</td>
+					<td id="tan"></td>
+				</tr>
+			</table>
+
+			<h1>Max and Min</h1>
+			Value 1: <input type="text" id="txtValue1" /> Value 2:
+			<input type="text" id="txtValue2" />
+			<h3>Max Number</h3>
+			<div id="maxNumber" class="b1"></div>
+			<h3>Min Number</h3>
+			<div id="minNumber" class="b1"></div>
+			<h3>Random Number</h3>
+			<div id="randNumber" class="b1"></div>
+
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
